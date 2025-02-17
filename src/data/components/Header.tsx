@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Route, Routes } from "react-router";
+import CardList from "./CardList";
 
 const Header = () => {
   const headerItems = [
@@ -24,7 +25,7 @@ const Header = () => {
         </ul>
       </nav>
       <Routes>
-        <Route path="/home" element={<MockPage title="Home page" />} />
+        <Route path="/" element={<CardList />} />
         <Route
           path="/electronics"
           element={<MockPage title="Electronics page" />}
